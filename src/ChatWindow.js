@@ -1,6 +1,6 @@
 import React from "react";
 
-const ChatWindow = ({ messageArray, showSignInModal, hideSignInModal }) => {
+const ChatWindow = ({ messageArray }) => {
   return (
     <div className="container d-flex flex-column">
       <div className="row h4 m-0 pt-3 pb-3 border-bottom justify-content-center">
@@ -24,15 +24,6 @@ const ChatWindow = ({ messageArray, showSignInModal, hideSignInModal }) => {
               </div>
             ))}
         </div>
-      </div>
-      <div className="position-absolute top-0">
-        <button
-          type="button"
-          class="btn btn-outline-primary m-2"
-          onClick={showSignInModal}
-        >
-          Sign-in
-        </button>
       </div>
     </div>
   );
